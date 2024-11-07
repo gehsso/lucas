@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
-
+ 
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -20,12 +20,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-2q2u(8u4-ym4yh9j-78c=&y@df$7&3s+n%x#c5v0j)cje-htc$'
+SECRET_KEY = 'django-insecure-z-g4hmxp9k6n0$!wmm-ghwr6a1pvx1_xc7_*lv8dlr09@b*1^m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
+
 
 
 # Application definition
@@ -37,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'home',
+     'home',
 ]
 
 MIDDLEWARE = [
@@ -108,9 +109,9 @@ LANGUAGE_CODE = 'pt-br'
 
 TIME_ZONE = 'America/Fortaleza'
 
-USE_I18N = True
+USE_I18N = True #habilita a Internacionalização (i18n) na aplicação Django
 
-USE_TZ = True
+USE_TZ = True #permite o uso de fusos horários com suporte ao padrão UTC(Tempo Universal Coordenado (do inglês Coordinated Universal Time))
 
 
 # Static files (CSS, JavaScript, Images)
